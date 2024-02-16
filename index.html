@@ -1,0 +1,40 @@
+
+<meta charset="utf-8">
+
+<title>아리스 키우기</title>
+<style type="text/css">
+	html{
+		display: block;
+		overflow: auto;
+	}
+	body{
+		background-color: #bde9ff;
+	}
+	img {
+        cursor : pointer;
+        vertical-align : bottom;
+    }
+</style>
+아리스 키우기<br/>
+아리스를 클릭해보세요!&nbsp;<button class="mt10" type="button" onclick="reset();">밸런스 붕괴</button>
+<br/><br/>
+<img id="arisu" onclick="growth();" src="./arisu.webp" style="visibility: hidden;">
+<br/><br/>
+	정직한 제목. 정직한 내용.
+
+<script type="text/javascript">
+
+let arisu = document.getElementById("arisu");
+reset();
+arisu.style = "visibility: initial;";
+
+function growth(){
+	arisu.height += arisu.width;
+	arisu.width += arisu.width;
+}
+function reset(){
+	arisu.width = 100;
+	arisu.height = 100;
+}
+</script>
+
